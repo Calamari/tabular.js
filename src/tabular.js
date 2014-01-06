@@ -2,7 +2,7 @@
  * Tabular.js
  * Creates a padded multiline string out of an array data structure
  * @author Georg Tavonius <g.tavonius@gmail.com>
- * @version 0.1.1
+ * @version 0.1.2
  * @license MIT
  */
 (function() {
@@ -47,7 +47,7 @@
     for (i=0; i<numLines; ++i) {
       line = [];
       for (j=0; j<obj[i].length; ++j) {
-        line[j] = obj[i][j] + timesChar(cellLengths[j] - obj[i][j].length, ' ');
+        line[j] = obj[i][j] + timesChar(cellLengths[j] - obj[i][j].length, config.padding != null ? config.padding : ' ');
       }
       resultLines.push(line.join(config.gutter != null ? config.gutter : ' '));
     }

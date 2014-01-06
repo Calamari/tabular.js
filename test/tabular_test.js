@@ -107,5 +107,33 @@ describe('tabular.js', function() {
                     'no no  never nomore'];
       expect(tab.lines(arr)).to.eql(result);
     });
+
+    it('like the padding', function() {
+      tab = new Tabular({
+        padding: '*'
+      });
+
+      var arr = [
+            ['Hey ja.', 'you too',  'true'],
+            ['no no',   'never no', 'more']
+          ],
+          result = ['Hey ja. you too* true',
+                    'no no** never no more'];
+      expect(tab.lines(arr)).to.eql(result);
+    });
+
+    it('like the padding to nothing', function() {
+      tab = new Tabular({
+        padding: ''
+      });
+
+      var arr = [
+            ['Hey ja.', 'you too',  'true'],
+            ['no no',   'never no', 'more']
+          ],
+          result = ['Hey ja. you too true',
+                    'no no never no more'];
+      expect(tab.lines(arr)).to.eql(result);
+    });
   });
 });
