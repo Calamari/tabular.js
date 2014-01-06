@@ -135,5 +135,33 @@ describe('tabular.js', function() {
                     'no no never no more'];
       expect(tab.lines(arr)).to.eql(result);
     });
+
+    it('like the line delimiter', function() {
+      tab = new Tabular({
+        newLine: '<br>'
+      });
+
+      var arr = [
+            ['Hey ja.', 'you too',  'true'],
+            ['no no',   'never no', 'more']
+          ],
+          result = ['Hey ja. you too  true',
+                    'no no   never no more'];
+      expect(tab.render(arr)).to.eql(result.join('<br>'));
+    });
+
+    it('like the line delimiter to nothing', function() {
+      tab = new Tabular({
+        newLine: ''
+      });
+
+      var arr = [
+            ['Hey ja.', 'you too',  'true'],
+            ['no no',   'never no', 'more']
+          ],
+          result = ['Hey ja. you too  true',
+                    'no no   never no more'];
+      expect(tab.render(arr)).to.eql(result.join(''));
+    });
   });
 });
