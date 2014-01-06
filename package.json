@@ -1,0 +1,11 @@
+{
+  "author": "Georg Tavonius <g.tavonius@gmail.com> (http://jaz-lounge.com)",
+  "name": "tabular.js",
+  "description": "Converts given Data into a string printable version.",
+  "version": "0.0.0",
+  "devDependencies": {
+    "mocha": "*",
+    "expect.js": "*"
+  },
+  "dependencies": {}
+}
