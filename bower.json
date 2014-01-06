@@ -1,0 +1,24 @@
+{
+  "name": "tabular.js",
+  "main": "tabular.js",
+  "version": "0.1.4",
+  "authors": [
+    "Calamari <g.tavonius@gmail.com>"
+  ],
+  "description": "Class that converts given data into a nice readable string.",
+  "keywords": [
+    "string",
+    "conversion",
+    "tabular",
+    "tabularize"
+  ],
+  "license": "MIT",
+  "homepage": "http://github.com/Calamari/tabular.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
