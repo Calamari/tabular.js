@@ -71,6 +71,17 @@ describe('tabular.js', function() {
                       'no no   never no more'];
         expect(tab.lines(arr)).to.eql(result);
       });
+
+      it('does not break if element is null or undefined', function() {
+        var undef,
+            arr = [
+              ['Hey ja.', 'you too', undef],
+              ['no no',   null, 'more']
+            ],
+            result = ['Hey ja. you too     ',
+                      'no no           more'];
+        expect(tab.lines(arr)).to.eql(result);
+      });
     });
   });
 
