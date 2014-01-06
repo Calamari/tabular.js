@@ -2,7 +2,7 @@
   "author": "Georg Tavonius <g.tavonius@gmail.com> (http://jaz-lounge.com)",
   "name": "tabular.js",
   "description": "Class that converts given data into a nice readable string.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "devDependencies": {
     "mocha": "*",
     "expect.js": "*",

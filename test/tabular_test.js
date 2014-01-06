@@ -73,4 +73,39 @@ describe('tabular.js', function() {
       });
     });
   });
+
+  describe('We can change setting', function() {
+    var tab;
+
+    beforeEach(function() {
+    });
+
+    it('like the gutter', function() {
+      tab = new Tabular({
+        gutter: '#'
+      });
+
+      var arr = [
+            ['Hey ja.', 'you too',  'true'],
+            ['no no',   'never no', 'more']
+          ],
+          result = ['Hey ja.#you too #true',
+                    'no no  #never no#more'];
+      expect(tab.lines(arr)).to.eql(result);
+    });
+
+    it('like the gutter to nothing', function() {
+      tab = new Tabular({
+        gutter: ''
+      });
+
+      var arr = [
+            ['Hey ja.', 'you too',  'true'],
+            ['no no',   'never no', 'more']
+          ],
+          result = ['Hey ja.you too true',
+                    'no no  never nomore'];
+      expect(tab.lines(arr)).to.eql(result);
+    });
+  });
 });
