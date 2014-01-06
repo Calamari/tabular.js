@@ -57,5 +57,5 @@
     return this.lines(obj).join('\n');
   };
 
-  module.exports = Tabular;
+  window.Tabular = Tabular;
 }());

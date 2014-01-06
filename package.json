@@ -1,13 +1,15 @@
 {
   "author": "Georg Tavonius <g.tavonius@gmail.com> (http://jaz-lounge.com)",
   "name": "tabular.js",
-  "description": "Converts given Data into a string printable version.",
+  "description": "Class that converts given data into a nice readable string.",
   "version": "0.1.0",
   "devDependencies": {
     "mocha": "*",
     "expect.js": "*",
     "grunt": "~0.4.2",
-    "grunt-shell": "~0.6.1"
+    "grunt-shell": "~0.6.1",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-concat": "~0.3.0"
   },
   "dependencies": {},
   "scripts": {
