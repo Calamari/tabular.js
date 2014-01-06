@@ -2,10 +2,15 @@
   "author": "Georg Tavonius <g.tavonius@gmail.com> (http://jaz-lounge.com)",
   "name": "tabular.js",
   "description": "Converts given Data into a string printable version.",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "devDependencies": {
     "mocha": "*",
-    "expect.js": "*"
+    "expect.js": "*",
+    "grunt": "~0.4.2",
+    "grunt-shell": "~0.6.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "test": "grunt test"
+  }
 }
